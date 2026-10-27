@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openrocket version="1.9" creator="OpenRocket 23.09">
+  <rocket>
+    <name>54 mm reference airframe</name>
+    <id>e885cbf4-4fea-4385-988a-dfefeef1e973</id>
+    <axialoffset method="absolute">0.0</axialoffset>
+    <position type="absolute">0.0</position>
+    <motorconfiguration configid="5e52a00d-4e41-4d79-8316-8169dd0e8b64" default="true">
+      <stage number="0" active="true"/>
+    </motorconfiguration>
+    <referencetype>maximum</referencetype>
+
+    <subcomponents>
+      <stage>
+        <name>Sustainer</name>
+        <id>ab516297-59be-44c3-8bbf-bd8a5921e313</id>
+        <overridemass>0.55</overridemass>
+        <overridesubcomponentsmass>true</overridesubcomponentsmass>
+        <overridecg>0.8</overridecg>
+        <overridesubcomponentscg>true</overridesubcomponentscg>
+
+        <subcomponents>
+          <nosecone>
+            <name>Nose cone</name>
+            <id>ce4d8d25-7010-43cd-9a81-a2b0882b864f</id>
+            <finish>normal</finish>
+            <material type="bulk" density="680.0">Cardboard</material>
+            <length>0.216</length>
+            <thickness>0.002</thickness>
+            <shape>ogive</shape>
+            <shapeparameter>1.0</shapeparameter>
+            <aftradius>0.027</aftradius>
+            <aftshoulderradius>0.0</aftshoulderradius>
+            <aftshoulderlength>0.0</aftshoulderlength>
+            <aftshoulderthickness>0.0</aftshoulderthickness>
+            <aftshouldercapped>false</aftshouldercapped>
+            <isflipped>false</isflipped>
+          </nosecone>
+
+          <bodytube>
+            <name>Body tube</name>
+            <id>ce7d0074-6116-454b-ad52-1a1e69eaa132</id>
+            <finish>normal</finish>
+            <material type="bulk" density="680.0">Cardboard</material>
+            <length>0.984</length>
+            <thickness>0.001</thickness>
+            <radius>0.027</radius>
+
+            <subcomponents>
+              <trapezoidfinset>
+                <name>Fin set</name>
+                <id>cf5ee925-9c27-4b71-878e-6e0626b44e32</id>
+                <instancecount>3</instancecount>
+                <fincount>3</fincount>
+                <radiusoffset method="surface">0.0</radiusoffset>
+                <angleoffset method="relative">0.0</angleoffset>
+                <rotation>0.0</rotation>
+                <axialoffset method="top">0.8340000000000001</axialoffset>
+                <position type="top">0.8340000000000001</position>
+                <finish>normal</finish>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <thickness>0.003</thickness>
+                <crosssection>square</crosssection>
+                <cant>0.0</cant>
+                <filletradius>0.0</filletradius>
+                <filletmaterial type="bulk" density="680.0">Cardboard</filletmaterial>
+                <rootchord>0.15</rootchord>
+                <tipchord>0.07</tipchord>
+                <sweeplength>0.08</sweeplength>
+                <height>0.055</height>
+              </trapezoidfinset>
+
+              <innertube>
+                <name>Motor mount</name>
+                <id>43c703bc-9af0-486e-a61c-c055c0660eb5</id>
+                <axialoffset method="top">0.8340000000000001</axialoffset>
+                <position type="top">0.8340000000000001</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.2</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.015</outerradius>
+                <thickness>5.000000000000004E-4</thickness>
+                <clusterconfiguration>single</clusterconfiguration>
+                <clusterscale>1.0</clusterscale>
+                <clusterrotation>0.0</clusterrotation>
+                <motormount>
+                  <ignitionevent>automatic</ignitionevent>
+                  <ignitiondelay>0.0</ignitiondelay>
+                  <overhang>0.003</overhang>
+                  <motor configid="5e52a00d-4e41-4d79-8316-8169dd0e8b64">
+                    <manufacturer>SIM</manufacturer>
+                    <digest>9bef458e08d8894250601d16c98a2872</digest>
+                    <designation>SAMPLE-H128</designation>
+                    <diameter>0.029</diameter>
+                    <length>0.195</length>
+                    <delay>1000.0</delay>
+                  </motor>
+                  <ignitionconfiguration configid="5e52a00d-4e41-4d79-8316-8169dd0e8b64">
+                    <ignitionevent>automatic</ignitionevent>
+                    <ignitiondelay>0.0</ignitiondelay>
+                  </ignitionconfiguration>
+                </motormount>
+              </innertube>
+            </subcomponents>
+          </bodytube>
+        </subcomponents>
+      </stage>
+    </subcomponents>
+  </rocket>
+
+  <simulations>
+    <simulation status="notsimulated">
+      <name></name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>5e52a00d-4e41-4d79-8316-8169dd0e8b64</configid>
+        <launchrodlength>1.83</launchrodlength>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>0.1</windaverage>
+        <windturbulence>0.0</windturbulence>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.001</timestep>
+      </conditions>
+      <flightdata maxaltitude="1174.37" maxvelocity="266.361" maxacceleration="302.816" maxmach="0.785" timetoapogee="12.586" flighttime="104.505" groundhitvelocity="29.124" launchrodvelocity="32.62" optimumdelay="10.632">
+        <warning>No recovery device defined in the simulation.</warning>
+        <warning>Flight Event occurred after landing:  Ejection charge</warning>
+      </flightdata>
+    </simulation>
+  </simulations>
+  <photostudio>
+  </photostudio>
+</openrocket>
